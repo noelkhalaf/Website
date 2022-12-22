@@ -1,0 +1,132 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    background-color: #464A5F;
+}
+  
+* {
+    box-sizing: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+/*** Header ***/
+header {
+    background-color: #000C2D;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-bottom: 1px solid #DFCF3C;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.2rem;
+}
+
+nav li a {
+    color: #DFCF3C;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.05rem;
+    padding: 0.5rem;
+    border-radius: 16px;
+    transition-duration: 300ms;
+}
+
+nav li a:hover {
+    color: #000C2D;
+    background-color: #DFCF3C;
+    background: linear-gradient(to top left, #F2A533, #DFCF3C)
+}
+
+header img {
+    max-width: 12%;
+    height: auto;
+    cursor: pointer;
+}
+
+/*** Main ***/
+main {
+    padding: 1.5rem;
+    background-color: #464A5F;
+}
+
+main h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #DFCF3C;
+    margin: 0;
+}
+
+main img {
+    max-width: 40%;
+    height: auto;
+    margin: 1.5rem auto;
+    display: block;
+}
+
+main p {
+    color: #DFCF3C;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+/*** Footer ***/
+
+footer {
+    padding: 1rem;
+    background-color: #000C2D;
+    color: #DFCF3C;
+    border-top: 1px solid #DFCF3C;
+    font-size: 0.8rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media only screen and (min-width: 600px) {
+
+    header img {
+        max-width: 8%;
+        height: auto;
+    }
+
+    nav li a {
+        font-weight: bold;
+        font-size: 2rem;
+        padding: 1rem;
+        border-radius: 16px;
+        transition-duration: 300ms;
+    }
+
+    main img {
+        max-width: 15%;
+        height: auto;
+        margin: 1.5rem auto;
+        display: block;
+    }
+
+    main p {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
+}
