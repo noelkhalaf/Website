@@ -130,3 +130,26 @@ footer {
         font-size: 1.2rem;
     }
 }
+
+main > ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.2rem;
+}
+
+main > ul > li > img {
+    max-width: 100%;
+    height: auto;
+    position:sticky;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+}
+
+#coin_gif {
+    max-width: 100%;
+    position: center;
+    cursor: pointer;
+}
